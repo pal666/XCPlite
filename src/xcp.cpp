@@ -238,7 +238,7 @@ void XcpObject::a2lCreateTypedef() {
 void XcpObject::xcpEvent() {
 
     if (this != NULL) {
-        Xcp::getInstance()->eventExt(instanceId, (uint8_t*)this);
+        Xcp::getInstance()->eventExt(instanceId, ApplXcpGetBaseAddr());
     }
 }
 
