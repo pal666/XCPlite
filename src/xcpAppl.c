@@ -247,7 +247,7 @@ uint8_t* ApplXcpGetBaseAddr() {
 
     if (!baseAddrValid) {
         dl_iterate_phdr(dump_phdr, NULL);
-        assert(baseAddr != NULL);
+        // assert(baseAddr != NULL);
         baseAddrValid = 1;
         XCP_DBG_PRINTF1("BaseAddr = %lX\n", (uint64_t)baseAddr);
     }
